@@ -5,20 +5,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Studentenbevraging</title>
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-  <div id="container">
-    <div id="main-content">
-      <h1>Studentenbevraging</h1>
-      <!-- Plaats het formulier hieronder -->
-
-    </div>
-    <div id="footer-content">
-      <span class="copyright">HoGent</span>
-    </div>
-  </div>
+  <main>
+    <h1>Studentenbevraging</h1>
+    <form action="mailto:" method="POST" enctype="text/plain">
+      <fieldset>
+        <legend>Noteer hieronder je e-mainadres</legend>
+        <label for="email">E-mainadres</label>
+        <input type="email" id="email" name="email" required>
+      </fieldset>
+      <fieldset>
+        <legend>Heb jij een vooropleiding in het buitenland gevolgd?</legend>
+        <input type="radio" id="vooropleiding-ja" name="vooropleiding" required>
+        <label for="vooropleiding-ja">Ja</label>
+        <br>
+        <input type="radio" id="vooropleiding-nee" name="vooropleiding">
+        <label for="vooropleiding-nee">Nee</label>
+      </fieldset>
+      <fieldset>
+        <legend>Wat was je leeftijd op 31 december 2020? (optioneel)</legend>
+        <label for="leeftijd">Leeftijd (in hele jaren)</label>
+        <input type="number" id="leeftijd" name="leeftijd" min="10">
+      </fieldset>
+      <fieldset>
+        <legend>Wil jij je opleiding not iets meegeven over de medezeggenschap? (optioneel)</legend>
+        <textarea name="extra"></textarea>
+      </fieldset>
+      <button type="submit">verzenden</button>
+    </form>
+  </main>
+  <footer>
+    <span class="copyright">&#169 HoGent</span>
+  </footer>
 </body>
 
 </html>

@@ -1,0 +1,56 @@
+body {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  background-color: #0072c6;
+  color: #fff;
+}
+
+.grid-container {
+  position: relative;
+}
+
+.grid-container div {
+  width: 6rem;
+  height: 6rem;
+  padding: 3px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #00bcf2;
+}
+
+.grid-container div:nth-child(1) {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid-container div:nth-child(2) {
+  top: 3rem;
+  left: 6rem;
+  background-color: #00475d;
+}
+
+.grid-container div:nth-child(3) {
+  left: 12rem;
+}
+
+.grid-container div:nth-child(4) {
+  top: 9rem;
+  left: 9rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.grid-container div:hover {
+  background-color: #fff;
+  color: #00bcf2;
+}
+/*# sourceMappingURL=styles.css.map */

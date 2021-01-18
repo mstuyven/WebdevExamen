@@ -1,0 +1,65 @@
+* {
+  --accent: rgb(8,167,235)
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  background-image: url(../images/batthern.png);
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 960px;
+}
+
+footer {
+  padding: 8px;
+  align-self: flex-start;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+fieldset {
+  border-color: var(--accent);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+legend {
+  color: var(--accent);
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+}
+
+button[type=submit] {
+  font-size: 1.1rem;
+  padding: 6px 12px;
+  background-color: var(--accent);
+  color: #ffffff;
+  border-radius: 3px;
+  justify-self: start;
+}
+
+@media screen and (min-width: 527px) {
+  form {
+    grid-template-columns: 1fr 1fr;
+  }
+}

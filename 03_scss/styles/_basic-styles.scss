@@ -1,0 +1,51 @@
+// Basic styles
+
+body {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  background-color: $blue;
+  color: $white;
+}
+
+.grid-container {
+  position: relative;
+}
+
+// Boxes
+
+.grid-container div {
+  $size: 6rem;
+  width: $size;
+  height: $size;
+  padding: 3px;
+  position: absolute;
+  display: flex;
+  box-sizing: border-box;
+  background-color: $bright-blue;
+
+  &:nth-child(1) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  &:nth-child(2) {
+    top: 3rem;
+    left: 6rem;
+    background-color: $dark-blue;
+  }
+
+  &:nth-child(3) {
+    left: 12rem;
+  }
+
+  &:nth-child(4) {
+    top: 9rem;
+    left: 9rem;
+    align-items: flex-end;
+  }
+
+  &:hover {
+    background-color: $white;
+    color: $bright-blue;
+  }
+}
